@@ -1,0 +1,99 @@
+$animation-timeout: 350ms;
+
+.container {
+  display: flex;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  transition: all $animation-timeout ease-in;
+
+  transform: translate(3%, -50%);
+
+  &:hover {
+    .boxOne {
+      transform: translate(-135%, -60%) rotate(45deg) scale(1.15);
+    }
+
+    .boxTwo {
+      transform: translate(-65%, -30%) scale(1.15);
+    }
+
+    .boxThree {
+      transform: translate(-30%, -20%) rotate(45deg) scale(1.3);
+    }
+  }
+}
+
+.containerHidden {
+  top: 0%;
+  transform: translate(3%, -100%);
+}
+
+.boxOne {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 301px;
+  height: 297px;
+  object-fit: cover;
+  transform: translate(-100%, -50%);
+  transition: all 0.45s cubic-bezier(0.5, 0.5, 0.4, 1.2);
+}
+
+.boxTwo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 344px;
+  height: 375px;
+  object-fit: cover;
+  transform: translate(-60%, -40%);
+  transition: all 0.45s cubic-bezier(0.5, 0.5, 0.4, 1.2);
+}
+
+.boxThree {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 376px;
+  height: 420px;
+  object-fit: cover;
+  transform: translate(-30%, -25%) scale(1.2);
+  transition: all 0.45s cubic-bezier(0.5, 0.5, 0.4, 1.2);
+}
+
+.seeAllButton {
+  all: unset;
+  background: #000;
+  width: 175px;
+  height: 46px;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  bottom: 15%;
+  left: 50%;
+  transition: all $animation-timeout ease-in;
+
+  transform: translate(-50%);
+
+  &:hover {
+    .seeAllButtonText {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.seeAllButtonText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  color: #ffffff;
+  transition: all $animation-timeout ease-in;
+}
+
+.seeAllButtonHidden {
+  bottom: 0%;
+  transform: translate(-50%, 100%);
+}

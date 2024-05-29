@@ -1,0 +1,22 @@
+$animation-timeout: 350ms;
+
+.guide {
+  font-size: 16px;
+  font-weight: 510;
+  line-height: 28px;
+  color: #9E9E9E;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 248px;
+  height: 56px;
+}
+
+.guideText {
+  opacity: 1;
+  transition: opacity $animation-timeout ease-in-out;
+}
+
+.guideTextHidden {
+  opacity: 0;
+}

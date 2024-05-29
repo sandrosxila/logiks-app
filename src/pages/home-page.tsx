@@ -8,8 +8,8 @@ import styles from "./home-page.module.scss";
 
 export const HomePage = () => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.section}>
+    <main className={styles.wrapper}>
+      <section className={styles.section}>
         <div className={styles.sectionLeft}>
           <span className={styles.sectionName}>Test 1</span>
           <span className={styles.sectionHeading}>
@@ -23,8 +23,8 @@ export const HomePage = () => {
         <div className={styles.sectionRight}>
           <img src={commercePagePhoto} alt="admin panel photo" className={styles.adminPhoto}/>
         </div>
-      </div>
-      <div className={styles.section}>
+      </section>
+      <section className={styles.section}>
         <div className={styles.sectionLeft}>
           <span className={styles.sectionName}>Test 2</span>
           <span className={styles.sectionHeading}>
@@ -38,8 +38,8 @@ export const HomePage = () => {
         <div className={styles.sectionRight}>
           <img src={productPagePhoto} alt="admin panel photo" className={styles.productPhoto}/>
         </div>
-      </div>
-      <div className={styles.section}>
+      </section>
+      <section className={styles.section}>
         <div className={styles.sectionLeft}>
           <span className={styles.sectionName}>Test 3</span>
           <span className={styles.sectionHeading}>Graphic animation</span>
@@ -51,7 +51,7 @@ export const HomePage = () => {
         <div className={styles.sectionRight}>
           <img src={menuPagePhoto} alt="admin panel photo" className={styles.menuPhoto}/>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
