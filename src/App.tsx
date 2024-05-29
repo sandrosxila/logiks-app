@@ -1,20 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { AdminPanel } from './pages/admin-panel';
-
-
+import { useState } from "react";
+import "./App.css";
+import { AdminPanel } from "./pages/admin-panel";
+import { Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/home-page";
 
 function App() {
-
   const [showPage, setShowPage] = useState("admin-panel");
 
   return (
-    <>
-      {showPage === "admin-panel" && <AdminPanel/>}
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />}/>
+      <Route path="/admin-panel" element={<AdminPanel />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
