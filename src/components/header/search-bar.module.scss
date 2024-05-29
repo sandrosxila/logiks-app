@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.searchButton {
+  all: unset;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchLogo {
+  color: #A6A7AC;
+
+  &:hover {
+    color: #75777E;
+  }
+}
+
+.searchInput {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  width: 227px;
+  border: none;
+  outline: none;
+  color: #151824;
+
+  &::placeholder {
+    color: #A6A7AC;
+  }
+}
+

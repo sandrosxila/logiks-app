@@ -1,0 +1,50 @@
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1 / span 1;
+    background-color: #FFF;
+    border-bottom: 1px solid #E1E1E3;
+    display: flex;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBarSection {
+
+}
+
+.userSection {
+    display: flex;
+    gap: 8px;
+}
+
+.userAvatar {
+    display: flex;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.userAvatarImage {
+    object-fit: cover;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userFullName {
+    color: #130F26;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.userEmail {
+    color: #878EA2;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}

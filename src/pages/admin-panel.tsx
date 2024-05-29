@@ -1,23 +1,17 @@
-import React, { useState } from "react";
-import { CSSTransition } from "react-transition-group";
+import React from "react";
 import styles from "./admin-panel.module.scss";
 import { Sidebar } from "../components/sidebar/sidebar";
+import { Header } from "../components/header/header";
 
-const ANIMATION_TIMEOUT = 350;
 
 export const AdminPanel = () => {
-  const [showSubmenu, setShowSubmenu] = useState(false);
-
-  const toggleSubmenu = () => {
-    setShowSubmenu((p) => !p);
-  };
 
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.header}></div>
-      <Sidebar/>
+    <main className={styles.wrapper}>
+      <Header />
+      <Sidebar />
       <div className={styles.content}></div>
-    </div>
+    </main>
   );
 };
