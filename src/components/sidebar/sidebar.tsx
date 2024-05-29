@@ -19,7 +19,7 @@ export const Sidebar = () => {
   const changeSubMenu = (newSubmenu: SubMenu | null) => {
     if (subMenu?.title !== newSubmenu?.title || subMenu === null) {
       setSubMenu(newSubmenu);
-      setShowSubMenu(true);
+      setShowSubMenu(newSubmenu !== null);
     } else {
       setShowSubMenu(false);
     }
@@ -49,16 +49,20 @@ export const Sidebar = () => {
         </div>
         <div className={styles.menuContent}>
           <div className={styles.menuItemsSection}>
-            {MENU_ITEMS.map(({ description, icon, iconFilled, submenu: itemSubMenu }) => (
-              <MenuItem
-                key={description}
-                description={description}
-                icon={icon}
-                iconFilled={iconFilled}
-                onClick={() => changeSubMenu(itemSubMenu ?? null)}
-                isActive={subMenu !== null && subMenu?.title === itemSubMenu?.title}
-              />
-            ))}
+            {MENU_ITEMS.map(
+              ({ description, icon, iconFilled, submenu: itemSubMenu }) => (
+                <MenuItem
+                  key={description}
+                  description={description}
+                  icon={icon}
+                  iconFilled={iconFilled}
+                  onClick={() => changeSubMenu(itemSubMenu ?? null)}
+                  isActive={
+                    subMenu !== null && subMenu?.title === itemSubMenu?.title
+                  }
+                />
+              )
+            )}
           </div>
           <div className={styles.menuInfoSection}>
             <img src={info} alt="info-square" />
