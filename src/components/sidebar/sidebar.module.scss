@@ -1,0 +1,164 @@
+$animation-timeout: 350ms;
+
+.sidebar {
+  grid-column: 1 / span 1;
+  grid-row: 1 / -1;
+  background: #fff;
+  display: flex;
+}
+
+.menu {
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e1e1e3;
+}
+
+.menuLogoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #e1e1e3;
+}
+
+.menuContent {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 24px 0;
+}
+
+.menuItemsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.menuInfoSection {
+  margin-top: auto;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.menuInfoText {
+  color: #c7c8ca;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.subMenuHidden {
+  width: 0px;
+  transition: all $animation-timeout ease-in-out;
+}
+
+.subMenuVisible {
+  width: 212px;
+}
+
+.subMenu {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 1px solid #e1e1e3;
+}
+
+.subMenuLogoSection {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #e1e1e3;
+  padding: 0 24px;
+}
+
+.subMenuContent {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px;
+}
+
+.subMenuTitle {
+  color: #151824;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  max-width: 102px;
+  margin: 0;
+}
+
+.subMenuItemGroup {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subMenuItem {
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    .subMenuItemText {
+      color: #6470ff;
+    }
+  }
+}
+
+.subMenuItemText {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #75777e;
+  flex-shrink: 0;
+}
+
+.circle {
+  background: #ff9446;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.subMenuInfoSection {
+  margin-top: auto;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-wrap: nowrap;
+}
+
+.subMenuInfoHelp {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #A6A7AC;
+  border-bottom: solid 1px #E1E1E3;
+  box-sizing: border-box;
+  padding: 0 24px;
+  padding-bottom: 40px;
+  height: 60px;
+  margin: 0 -24px;
+  text-wrap: nowrap;
+}
+
+.subMenuInfoText {
+  color: #c7c8ca;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
