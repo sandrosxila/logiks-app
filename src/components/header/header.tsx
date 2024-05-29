@@ -5,7 +5,7 @@ import { SearchBar } from "./search-bar";
 
 export const Header = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.searchBarSection}>
         <SearchBar />
       </div>
@@ -22,6 +22,6 @@ export const Header = () => {
           />
         </div>
       </div>
-    </div>
+    </header>
   );
 };

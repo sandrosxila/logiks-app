@@ -101,3 +101,30 @@ export type SubMenu = {
   title: string;
   items: { title: string; checked: boolean }[];
 };
+
+export const COLLECTIONS = [
+  {
+    name: "July Articles",
+    isEdited: true,
+  },
+  {
+    name: "July Articles",
+    isEdited: true,
+  },
+  {
+    name: "July Articles",
+    isEdited: true,
+  },
+  {
+    name: "July Articles",
+    isEdited: true,
+  },
+  {
+    name: "August Articles",
+    isEdited: false,
+  },
+  {
+    name: "August Articles",
+    isEdited: false,
+  },
+];

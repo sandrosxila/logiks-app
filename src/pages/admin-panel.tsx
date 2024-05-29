@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./admin-panel.module.scss";
 import { Sidebar } from "../components/sidebar/sidebar";
 import { Header } from "../components/header/header";
+import { Content } from "../components/content/content";
 
 
 export const AdminPanel = () => {
@@ -11,7 +12,7 @@ export const AdminPanel = () => {
     <main className={styles.wrapper}>
       <Header />
       <Sidebar />
-      <div className={styles.content}></div>
+      <Content />
     </main>
   );
 };

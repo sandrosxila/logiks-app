@@ -42,8 +42,8 @@ export const Sidebar = () => {
   }, [sideBarRef]);
 
   return (
-    <nav ref={sideBarRef} className={styles.sidebar}>
-      <div className={styles.menu}>
+    <aside ref={sideBarRef} className={styles.sidebar}>
+      <nav className={styles.menu}>
         <div className={styles.menuLogoSection}>
           <img src={logo} alt="logo" />
         </div>
@@ -69,7 +69,7 @@ export const Sidebar = () => {
             <span className={styles.menuInfoText}>1.01</span>
           </div>
         </div>
-      </div>
+      </nav>
       <CSSTransition
         nodeRef={subMenuRef}
         in={showSubMenu}
@@ -105,6 +105,6 @@ export const Sidebar = () => {
           </div>
         </div>
       </CSSTransition>
-    </nav>
+    </aside>
   );
 };
