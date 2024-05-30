@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.pageDot {
+  all: unset;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.pageDotActive {
+  border: none;
+  background: #BDBDBD;
+}
