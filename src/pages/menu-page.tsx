@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./menu-page.module.scss";
 import { ShapeItem } from "../components/shape-item/shape-item";
 import classNames from "classnames";
+import { HolandHop } from "../components/holandhop/holandhop";
 
 export const MenuPage = () => {
   const [phase, setPhase] = useState(0);
@@ -101,6 +102,9 @@ export const MenuPage = () => {
           title="Registering Your Company"
           color={"#C6C6C6"}
         />
+      </div>
+      <div className={styles.holandHop}>
+        <HolandHop />
       </div>
     </div>
   );

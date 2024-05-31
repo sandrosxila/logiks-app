@@ -3,7 +3,6 @@
 
   width: 100vw;
   height: 100vh;
-  background: #fff;
   overflow: hidden;
 }
 
@@ -21,12 +20,17 @@
   color: #030202;
 }
 
-.relocationShape {
+@mixin shape {
   position: absolute;
+  transition: all 0.5s ease-out;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.relocationShape {
+  @include shape;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s ease-out;
 }
 
 .relocationShapeAside {
@@ -35,11 +39,9 @@
 }
 
 .personalShape {
-  position: absolute;
+  @include shape;
   top: 50%;
   left: 40%;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s ease-out;
 }
 
 .personalShapeAside {
@@ -59,11 +61,9 @@
 }
 
 .corporateShape {
-  position: absolute;
+  @include shape;
   top: 50%;
   left: 60%;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s ease-out;
 }
 
 .corporateShapeAside {
@@ -82,33 +82,35 @@
 }
 
 .leftLeafShape {
-  position: absolute;
+  @include shape;
   top: 50%;
   left: 60%;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s ease-out;
 }
 
 .leftLeafShapeAside {
-  position: absolute;
+  @include shape;
   top: 100%;
   left: 60%;
   transform: translate(-50%, 100%);
-  transition: all 0.5s ease-out;
 }
 
 .rightLeafShape {
-  position: absolute;
+  @include shape;
   top: 50%;
   left: 80%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s ease-out;
 }
 
 .rightLeafShapeAside {
-  position: absolute;
+  @include shape;
   top: 100%;
   left: 80%;
   transform: translate(-50%, 100%);
-  transition: all 0.5s ease-out;
+}
+
+.holandHop {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-7%, 40%);
+  z-index: 0;
 }
