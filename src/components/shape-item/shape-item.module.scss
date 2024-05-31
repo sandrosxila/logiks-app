@@ -1,0 +1,35 @@
+.wrapper {
+  all: unset;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+  cursor: pointer;
+}
+
+.item {
+  grid-area: 1 / 1 / 1 / 1;
+  object-fit: cover;
+}
+
+.linearWipe {
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.48px;
+  
+
+  background: linear-gradient(to right, #000 40%, #FF6000 50%, #000 60%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 3.5s linear infinite;
+  @keyframes shine {
+    from {
+      background-position: 200% center;
+    }
+  }
+}
