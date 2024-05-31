@@ -47,6 +47,17 @@
   transform: translate(100%, -50%);
 }
 
+
+.personalShapePhaseAside {
+  left: 30%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.personalShapeSelected {
+  opacity: 0.5;
+}
+
 .corporateShape {
   position: absolute;
   top: 50%;
@@ -58,4 +69,46 @@
 .corporateShapeAside {
   left: 100%;
   transform: translate(200%, -50%);
+}
+
+.corporateShapePhaseAside {
+  left: 30%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.corporateShapeSelected {
+  opacity: 0.5;
+}
+
+.leftLeafShape {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-out;
+}
+
+.leftLeafShapeAside {
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  transform: translate(-50%, 100%);
+  transition: all 0.5s ease-out;
+}
+
+.rightLeafShape {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-out;
+}
+
+.rightLeafShapeAside {
+  position: absolute;
+  top: 100%;
+  left: 80%;
+  transform: translate(-50%, 100%);
+  transition: all 0.5s ease-out;
 }

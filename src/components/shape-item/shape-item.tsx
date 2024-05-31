@@ -46,7 +46,7 @@ export const ShapeItem = ({size, color, title, onClick} : ShapeItemProps) => {
   }, []);
 
   return (
-    <button className={styles.wrapper} ref={scope} onClick={onClick}>
+    <button style={{maxWidth: size}} className={styles.wrapper} ref={scope} onClick={onClick}>
       <motion.div id="first" style={{ opacity: 1, scale: 1.02 }} className={styles.item}>
         <ShapeOne color={color} width={size} height={size} />
       </motion.div>
@@ -59,7 +59,7 @@ export const ShapeItem = ({size, color, title, onClick} : ShapeItemProps) => {
       <motion.div id="fourth" style={{ opacity: 0, scale: 1 }} className={styles.item}>
         <ShapeFour color={color} width={size} height={size} />
       </motion.div>
-      <span className={classNames(styles.item, styles.linearWipe)}>
+      <span style={{maxWidth: size}} className={classNames(styles.item, styles.linearWipe, styles.text)}>
         {title}
       </span>
     </button>
