@@ -12,6 +12,11 @@ nvm use 20
 
 - pnpm
 
+```bash
+pnpm install
+```
+
+
 ## run the project
 
 
