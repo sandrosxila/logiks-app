@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./admin-panel.module.scss";
 import { Sidebar } from "../components/sidebar/sidebar";
 import { Header } from "../components/header/header";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./product-page.module.scss";
 import { Intro } from "../components/intro/intro";
 import {GuideText} from '../components/guide-text/guide-text';

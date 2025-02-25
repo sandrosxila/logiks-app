@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./dot-navigator.module.scss";
 import classNames from "classnames";
 

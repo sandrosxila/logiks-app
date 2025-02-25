@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import {useRef} from "react";
 import boxOne from "../../assets/photos/box-1.png";
 import boxTwo from "../../assets/photos/box-2.png";
 import boxThree from "../../assets/photos/box-3.png";

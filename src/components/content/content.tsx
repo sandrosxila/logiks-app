@@ -1,4 +1,3 @@
-import React from "react";
 import PlusSquare from '../../assets/icons/plus-square.svg?react';
 import styles from "./content.module.scss";
 import { Card } from "./card";

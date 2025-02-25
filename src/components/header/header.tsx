@@ -1,4 +1,3 @@
-import React from "react";
 import avatar from "../../assets/photos/avatar.png";
 import styles from "./header.module.scss";
 import { SearchBar } from "./search-bar";

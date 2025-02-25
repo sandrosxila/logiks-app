@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './holandhop.module.scss'
 
 export const HolandHop = () => {

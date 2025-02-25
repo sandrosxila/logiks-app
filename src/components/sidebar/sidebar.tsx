@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/icons/commerce-logo.svg";
 import info from "../../assets/icons/info-square.svg";
 import commerceFlow from "../../assets/photos/commerce-flow.svg";

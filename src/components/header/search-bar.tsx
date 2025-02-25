@@ -1,4 +1,3 @@
-import React from "react";
 import Magnifier from "../../assets/icons/magnifier.svg?react";
 import styles from "./search-bar.module.scss";
 

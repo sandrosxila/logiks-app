@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./guide-text.module.scss";
 import { CSSTransition } from "react-transition-group";
 import { useRef } from "react";

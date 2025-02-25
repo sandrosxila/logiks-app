@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import arrowRight from "../assets/icons/arrow-right.svg";
 import commercePagePhoto from "../assets/photos/commerce-page.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import caretDown from "../../assets/icons/caret-down.svg";
 import folder from "../../assets/icons/folder.svg";
 import TrashCan from "../../assets/icons/trash-can.svg?react";

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { motion, useAnimate } from "framer-motion";
 import ShapeOne from "../../assets/icons/outline-1.svg?react";
 import ShapeTwo from "../../assets/icons/outline-2.svg?react";

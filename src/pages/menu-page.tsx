@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./menu-page.module.scss";
 import { ShapeItem } from "../components/shape-item/shape-item";
 import classNames from "classnames";
